@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 
 export PROJECT_ID=$(gcloud info --format='value(config.project)')
 export SERVICE_ACCOUNT_NAME="dashboard-demo"
@@ -37,7 +35,7 @@ export DOMAIN="${STATIC_IP}.xip.io"
 echo "My domain: ${DOMAIN}"
 
 kubectl create secret generic domain --from-literal domain=$DOMAIN
-kubectl create -f kubernetes/bokeh.yaml
+kubectl create -f gke/bokeh.yaml
 
 # Creating an SSL certificate
 export STATIC_IP=$(gcloud compute addresses describe \
