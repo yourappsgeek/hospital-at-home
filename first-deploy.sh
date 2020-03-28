@@ -91,4 +91,4 @@ echo "Creating global forwarding rule..."
 gcloud compute forwarding-rules create dashboard-demo-gfr --address $STATIC_IP --global --target-https-proxy dashboard-demo-https-proxy --ports 443
 
 
-echo https://${STATIC_IP}.xip.io/dashboard
+echo https://${STATIC_IP}.xip.io/app
