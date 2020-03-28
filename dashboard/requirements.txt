@@ -1,0 +1,7 @@
+bokeh
+Tornado
+pandas
+pandas-gbq
+google-api-python-client
+scipy
+
