@@ -1,0 +1,11 @@
+Overall_Risk_Status,Patient_ID,age,Location,since_symptom,since_diagnosis,SpO2,heart_rate,resp_rate,live_data,trends,low,max,Text,Call,Emergency_Dispatch,Notepad,Last_interaction,Medical_History,on_home_oxygen?,PAP-device
+normal,Karl Patatino,65,Coor.,7,4,96%,75,10,O,normal,2,O,O,O,doing well (28.3. 10:49),text,0,n,n,n
+low,Irmi Funkel,86,Coor.,2,2,88%,69,20,O,,3,O,O,O,sensor problem  fixed (28.3. 12.50),call,0,n,n,n
+high,Achim Schauburg,19,Coor.,4,1,94%,91,10,O,,1,O,O,O,called to say all good (17.3. 15:31),call,0,n,n,n
+normal,Hermann Engel,25,Coor.,9,3,85%,110,25,O,,4,O,O,O,dyspnea since 2 hrs (28.3. 18:31),call,0,n,n,n
+low,Franziska Rübli,34,Coor.,8,3,91%,84,16,O,,1,O,O,O,stable, recovering (26.3.,07:00:00 AM,call,O,n
+high,Pablo Iguacu,63,Coor.,1,0,90%,45,35,O,,4,O,O,O,fever, chills (28.3. 10.30) ,text,O,y,n
+normal,Kim Jackson,77,Coor.,7,6,99%,69,12,O,,1,O,O,O,doing much better (28.3. 12:05),call,O,n,n,n
+low,Rüdiger Paulsen,69,Coor.,4,2,79%,51,39,O,,5,O,O,O,not responding (28.03. mult.),call, text,O,n,n
+high,Olaf Schmidt,76,Coor.,4,3,85%,99,13,O,,3,O,O,O,worries he might get worse (27.3., 21:08),text,O,n,n
+normal,John Parmalano,66,Coor.,5,2,92%,70,14,O,,1,O,O,O,no complaints (28.03. 08.05),text,O,n,n,
