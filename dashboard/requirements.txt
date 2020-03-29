@@ -4,4 +4,4 @@ pandas==0.23.4
 pandas-gbq==0.6.0
 google-api-python-client==1.6.2
 scipy==0.19.0
-
+pymemcache==1.4.3

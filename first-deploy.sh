@@ -16,8 +16,6 @@ gcloud container clusters create dashboard-demo-cluster \
   --tags dashboard-demo-node \
   --num-nodes=2
 
-export PROJECT_ID=$(gcloud info --format='value(config.project)')
-
 kubectl create secret generic project-id \
   --from-literal project-id=$PROJECT_ID
 
@@ -25,10 +23,10 @@ kubectl create secret generic service-account-key \
   --from-file service-account-key=service-account-key.json
 
 
-gcloud compute addresses create dashboard-demo-static-ip --global
+gcloud compute addresses create bokeh-demo-static-ip --global
 
 export STATIC_IP=$(gcloud compute addresses describe \
-  dashboard-demo-static-ip --global --format="value(address)")
+  bokeh-demo-static-ip --global --format="value(address)")
 
 export DOMAIN="${STATIC_IP}.xip.io"
 
@@ -38,9 +36,6 @@ kubectl create secret generic domain --from-literal domain=$DOMAIN
 kubectl create -f gke/bokeh.yaml
 
 # Creating an SSL certificate
-export STATIC_IP=$(gcloud compute addresses describe \
-  dashboard-demo-static-ip --global --format="value(address)")
-
 export DOMAIN="${STATIC_IP}.xip.io"
 
 mkdir /tmp/dashboard-demo-ssl
