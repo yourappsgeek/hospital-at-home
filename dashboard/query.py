@@ -20,8 +20,3 @@ patient_info_df = query_job.result().to_dataframe(bqstorage_client=bqstorageclie
  
 
 print(patient_info_df.head())
-
-TITLE = "Patient Info"
-
-
-source = ColumnDataSource(patient_info_df)
